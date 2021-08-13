@@ -44,27 +44,27 @@ header {
   width: auto;
 }
 /**********************************/
-.submenu{
-  position:absolute;
+.submenu {
+  position: absolute;
   width: 250px;
   top: 100%;
-  left:-1rem;
+  left: -1rem;
   display: none;
-  background-color: rgb(248, 248, 248)  ;
+  background-color: rgb(248, 248, 248);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.subnav:hover .submenu{
+.subnav:hover .submenu {
   display: block;
   transition: 1s;
 }
-.submenu li a{
+.submenu li a {
   display: block;
   padding: auto;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
-.submenu li:hover{
-  background-color:#64d8ff;
-  transition:.5s ease-in-out;
+.submenu li:hover {
+  background-color: #64d8ff;
+  transition: 0.5s ease-in-out;
 }
 .nav-list .nav-link {
   position: relative;
@@ -177,6 +177,43 @@ header {
   padding: 2rem 0;
   border-top: 2px solid #000;
 }
+/* **************************************************************** */
+.goithieu .content {
+  padding: 1rem;
+  background-color: rgb(214, 214, 214);
+}
+.gioithieu-txt {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .gioithieu-txt {
+    flex-direction: column;
+  }
+}
+
+.gioithieu-title {
+  font-size: 28px;
+  padding: 1rem 0;
+  color: blueviolet;
+}
+.txt-box {
+  position: relative;
+  padding-right: 1rem;
+  line-height: 1.5;
+}
+.goithieu .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.fl1 {
+  flex: 1;
+}
+.fl3 {
+  flex: 3;
+}
+
 /* /-------------/ */
 section {
   margin: 4rem;
@@ -214,6 +251,31 @@ section .content {
   grid-template-areas:
     "h1 h2"
     "h1 h3";
+}
+@media (max-width: 768px) {
+  .grid {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 90%;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+  }
+  .grid::-webkit-scrollbar {
+    display: none;
+    width: 0;
+  }
+  .grid > * {
+    scroll-snap-align: start;
+  }
 }
 .grid-item {
   background-color: rgb(0, 0, 0);
@@ -268,13 +330,17 @@ section .content {
 .row {
   display: flex;
   text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-left: -4rem;
 }
 .cl-4 {
   width: calc(25% - 4rem);
+  min-width: 325px;
 }
 .col-item {
   position: relative;
+  margin-top: 1rem;
   height: 600px;
   margin-left: 4rem;
   box-shadow: rgba(0, 0, 0, 0.575) 0px 2px 8px 0px;
@@ -289,6 +355,7 @@ section .content {
 }
 .cl-3 {
   width: calc(33.333% - 4rem);
+  min-width: 450px;
 }
 .bamien .col-item img {
   height: 50%;
@@ -325,7 +392,8 @@ footer {
   width: 33.33%;
   display: flex;
   flex-direction: column;
-  padding: 3rem 0rem 3rem 8rem;
+  margin-top: 2rem;
+  margin-left: 6rem;
 }
 .foo-title {
   font-size: 32px;
@@ -344,6 +412,7 @@ footer .line {
   width: 100%;
   height: 2px;
   background-color: #fff;
+  margin: 1rem 0;
 }
 .info {
   padding: 2rem 0;
@@ -353,4 +422,17 @@ footer .line {
 .info h2 {
   padding-bottom: 2rem;
   font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .col {
+    width: 100%;
+    margin-left: 0;
+  }
 }
