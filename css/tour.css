@@ -1,88 +1,8 @@
-@import "./header_fotter.css";
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.search-box .form {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(90, 90, 90);
-  padding: 2% 4%;
-  margin-right: -2rem;
-  border-radius: 10px;
-}
-.search-box label {
-  padding: 0.5rem 0;
-}
-.search-box input,
-.search-box .date,
-.search-box .book {
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 0 0 5px 5px;
-  outline: 0;
-  border: none;
-  width: 100%;
-}
-.search-box .form-group {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(148, 210, 230);
-  font-weight: 500;
-  border-radius: 5px;
-  margin-right: 2rem;
-}
-.form-group:first-child,
-.form-group:nth-child(2) {
-  flex: 4;
-}
-.form-group:nth-child(3),
-.form-group:nth-child(4) {
-  flex: 2;
-}
-
-.search-box .book {
-  text-decoration: none;
-  color: #000;
-  text-transform: uppercase;
-  cursor: pointer;
-  background-color: #2ff6fd;
-  font-size: 16px;
-  font-weight: normal;
-  text-align: center;
-  border-radius: 10px;
-  padding: 15px;
-  flex: 1;
-}
-
-
-
-@media screen and (max-width: 768px) {
-  .search-box .form {
-    flex-direction: column;
-    row-gap: 1rem;
-    justify-content: center;
-  }
-  .form-group {
-    flex: 1;
-    width: 100%;
-  }
-  .form .book {
-    margin-left: -2rem;
-  }
-  .search-box input,
-  .search-box .date,
-  .search-box .book {
-    padding: 8px 16px;
-  }
-}
+@import "./reset.css";
+@import "./header.css";
+@import "./banner.css";
+@import "./footer.css";
+@import "./search.css";
 section {
   margin: 4rem 2rem;
   overflow: hidden;
@@ -245,10 +165,10 @@ section {
   padding-bottom: 1rem;
   text-align: center;
 }
-.tour-box-info a h4:hover{
+.tour-box-info a h4:hover {
   cursor: pointer;
   color: rebeccapurple;
-  transition:.5s;
+  transition: 0.5s;
 }
 .tour-box-info p {
   padding: 0.5rem 1rem;
@@ -264,7 +184,8 @@ section {
   .col-50 {
     width: 100%;
   }
-  .tour-on .content,.tour-list.content {
+  .tour-on .content,
+  .tour-list.content {
     background-color: #ffff;
     margin-left: -1rem;
   }
@@ -286,8 +207,8 @@ section {
   .tour-on .box-X {
     height: 250px;
   }
-  .tour-list .col-3{
+  .tour-list .col-3 {
     width: 90%;
-    padding:.5rem
+    padding: 0.5rem;
   }
 }

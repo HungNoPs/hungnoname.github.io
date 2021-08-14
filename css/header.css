@@ -4,7 +4,7 @@ header {
   position: fixed;
   top: 0;
   right: 0;
- left: 0;
+  left: 0;
   z-index: 999;
 }
 .header-top,
@@ -74,7 +74,7 @@ header {
     position: absolute;
     top: 2rem;
     right: 4rem;
-    font-size:3rem;
+    font-size: 3rem;
     color: #000000;
   }
 }
@@ -135,122 +135,3 @@ header {
   opacity: 1;
 }
 /* ------------------------ */
-.banner {
-  margin-top: 8rem;
-  position: relative;
-  width: 100%;
-  height: 80vh;
-}
-.swiper-button-prev,
-.swiper-button-next {
-  color: #ccc !important;
-}
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  transform: scale(1.5);
-  color: #fff !important;
-  transition: 0.4s;
-}
-.search {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-  bottom: 1.5rem;
-  width: 50%;
-  display: flex;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.05);
-}
-.search button {
-  padding: 12px 20px;
-  color: black;
-  flex-shrink: 0;
-  background-color: #2ccaff;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-}
-.search input {
-  width: 100%;
-  padding: 12px;
-  background-color: #fff;
-  -webkit-appearance: none;
-  font-size: 14px;
-  font-weight: 500;
-  border: 0;
-  outline: none;
-  line-height: normal;
-}
-@media screen and (max-width: 768px) {
-  .banner {
-    height: 50vh;
-  }
-  .search {
-    width: 80%;
-  }
-}
-
-footer {
-  background-color: rgb(94, 0, 58);
-}
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.col {
-  width: 33.33%;
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-}
-.foo-title {
-  font-size: 32px;
-  padding-bottom: 2rem;
-  color: #fff;
-}
-.col a {
-  color: #fff;
-  padding: 1rem 0;
-}
-.col a:hover {
-  color: rgb(19, 188, 255);
-  transition: 0.4s ease-in-out;
-}
-footer .line {
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  margin: 1rem 0;
-}
-.info {
-  padding: 2rem 0;
-  text-align: center;
-  color: #fff;
-}
-.info h2 {
-  padding-bottom: 2rem;
-  font-weight: 600;
-}
-@media screen and (max-width: 767px) {
-  .footer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .foo-title {
-    font-size: 25px;
-    padding-bottom: 1rem;
-  }
-  .col {
-    width: 100%;
-    margin-left: 0;
-  }
-  .col a {
-    padding: 0.5rem 0;
-  }
-}
