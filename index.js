@@ -19,7 +19,7 @@ listimgSrc.forEach((element) => {
     imgsrc.src = tempsrc;
   });
 });
-
+/* Show menu*/
 var together = document.getElementById("nav-toggle");
 var navMenu = document.getElementById("nav-menu");
 var closeMenu = document.querySelector(".close-nav");
