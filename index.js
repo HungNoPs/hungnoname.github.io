@@ -22,10 +22,10 @@ listimgSrc.forEach((element) => {
 
 var together = document.getElementById("nav-toggle");
 var navMenu = document.getElementById("nav-menu");
-var closel = document.querySelector(".close-nav");
+var closeMenu = document.querySelector(".close-nav");
 together.addEventListener("click", () => {
   navMenu.classList.add("show");
 });
-closel.addEventListener("click", () => {
+closeMenu.addEventListener("click", () => {
   navMenu.classList.remove("show");
 });
