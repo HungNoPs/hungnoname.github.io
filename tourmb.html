@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DuyDai - tour miềm bắc</title>
+    <!-- linh css -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="tour.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-contact">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <p>019988575</p>
+            </div>
+            <div class="header-contact">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p>duydai@gmail.com</p>
+            </div>
+        </div>
+        <div class="header-warp">
+            <div class="logo">
+                <img src="./img/logoone.png" alt="" />
+            </div>
+            <ul class="nav-list" id="nav-menu">
+                <li><a href="#" class="nav-link">TRANG CHỦ</a></li>
+                <li class="subnav"><a href="#" class="nav-link">TOUR</a>
+                    <ul class="submenu">
+                        <li><a href="/tourmb.html">MIỀN BẮC</a></li>
+                        <li><a href="/tourmt.html">MIỀN TRUNG</a></li>
+                        <li><a href="/tourmn.html">MIỀN NAM</a></li>
+                    </ul>
+                    </a>
+                </li>
+                <li class="subnav"><a href="#" class="nav-link">DỊCH VỤ</a>
+                    <ul class="submenu">
+                        <li><a href="#">Khách Sạn</a></li>
+                        <li><a href="#">vận chuyển</a></li>
+                        <li><a href="#">Vé Vào cổng</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-link">TIN TỨC</a></li>
+                <li><a href="#" class="nav-link">HỖ TRỢ</a></li>
+                <div class="close-nav">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </ul>
+            <div class="nav__toggle" id="nav-toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1566133548098-a8820697e960?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=962&q=80"
+                    alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1468774871041-fc64dd5522f3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
+                    alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1001&q=80"
+                    alt="" />
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- search -->
+        <div id="search" class="search">
+            <input type="text" placeholder="Find your flight" />
+            <button>Search</button>
+        </div>
+    </div>
+    <section class="search-box">
+        <form class="form">
+            <div class="form-group">
+                <label for="">Tour</label>
+                <input type="text" list="mylist1" placeholder="Chọn tên tour">
+                <datalist id="mylist1">
+                    <option>Tour Miền Bắc</option>
+                    <option>Tour miền name</option>
+                    <option>Tour miềm trung</option>
+                    <option>Seoul</option>
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="">Địa điểm</label>
+                <input type="text" list="mylist2" placeholder="Chọn điểm đến">
+                <datalist id="mylist2">
+                    <option>Hà Nội</option>
+                    <option>Hồ Chí Minh</option>
+                    <option>Huế</option>
+                    <option>Phú Quốc</option>
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label for="">Thời gian đi</label>
+                <input type="date" class="date">
+            </div>
+            <div class="form-group">
+                <label for="">Thời gian đến</label>
+                <input type="date" class="date">
+            </div>
+            <a href="#" class="book">Search</a>
+        </form>
+    </section>
+
+    <section class="tour-on">
+        <div class="sec-title">
+            <div></div>
+            <h2>TOUR MIỀM BẮC</h2>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-50 flex-column">
+                    <div class="box-X">
+                        <img src="https://images.unsplash.com/photo-1499591934245-40b55745b905?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+                            alt="">
+                    </div>
+                    <div class="list-img ">
+                        <div class="arc-src"><img
+                                src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80"
+                                alt=""></div>
+                        <div class="arc-src"><img
+                                src="https://images.unsplash.com/photo-1533850595620-7b1711221751?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=814&q=80"
+                                alt=""></div>
+                        <div class="arc-src"><img
+                                src="https://images.unsplash.com/photo-1519055548599-6d4d129508c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80"
+                                alt=""></div>
+                    </div>
+                </div>
+                <div class="col-50 slide-ct">
+                    <div class="box-X">
+                        <div class="tour-title">
+                            <h2>TOUR HÀ NỘI - SAPA</h2>
+                            <em>Thông tin tour</em>
+                        </div>
+                        <div class="tour-info">
+                            <p>Thời gian: 2/4 - 5/4</p>
+                            <p>Điểm xuất phát: Huế</p>
+                            <p>Điểm đến: Sapa - Hà Nội</p>
+                            <p>Hành trình: Huế - Sapa - Hà Nội - Huế</p>
+                            <p>Giá: 1.999.999đ</p>
+                        </div>
+                    </div>
+                    <div class=" list-img">
+                        <div class="box-item">
+                            <h4>Đánh giá</h4>
+                            <em> duydaihue@gmail.com</em>
+                        </div>
+                        <div class="box-item">
+                            <h4>Liên hệ đặt tour</h4>
+                            <em> Sđt: 0914 237 464</em>
+                            <em>Email:duydaihue@gmail.com</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour-list">
+        <div class="sec-title">
+            <div></div>
+            <h2>TOUR LIÊN QUAN</h2>
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="col-3 tour-item">
+                    <div class="tour-box-img">
+                        <img src="https://owa.bestprice.vn/images/tours/uploads/ha-long-tuan-chau-2-ngay-1-dem-5e5642a3b1b03.jpg"
+                            alt="">
+                        <div class="price">Giá: 1.900.000 VND</div>
+                    </div>
+                    <div class="tour-box-info">
+                        <h4>DU LỊCH HẢI PHÒNG - HẠ LONG - SAPA</h4>
+                        <p>Xuất phát: Huế</p>
+                        <p>Thời gian: 2 ngày 1 đêm</p>
+                    </div>
+
+                </div>
+                <div class="col-3 tour-item">
+                    <div class="tour-box-img">
+                        <img src="http://wiki-travel.com.vn/Uploads/picture/Viet_Dung-185625015619-Lao%20Cai.jpg"
+                            alt="">
+                            <sp class="hot">Hot</sp>
+                        <div class="price">Giá: 1.900.000 VND</div>
+                    </div>
+                    <div class="tour-box-info">
+                        <h4>DU LỊCH NINH BÌNH - HÀ NỘI - LÀO CAI</h4>
+                        <p>Xuất phát: Huế</p>
+                        <p>Thời gian: 3 ngày 1 đêm</p>
+                    </div>
+
+                </div>
+                <div class="col-3 tour-item">
+                    <div class="tour-box-img">
+                        <img src="https://huesmiletravel.com.vn/images/chua_linh_ung.jpg"
+                            alt="">
+                        <div class="price">Giá: 1.900.000 VND</div>
+                    </div>
+                    <div class="tour-box-info">
+                        <h4>DU LỊCH VÂN ĐỒN - HÀ NỘI</h4>
+                        <p>Xuất phát: Huế</p>
+                        <p>Thời gian: 3 ngày 1 đêm</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="col">
+                <h2 class="foo-title">DUY ĐẠI TRAVEL</h2>
+                <a href="#">Trụ sở chính: Kiệt 64, Nguyễn Công Trứ</a>
+                <a href="#">Gmail: duydaihue@gmail.com</a>
+                <a href="#">SĐT: 0914237464</a>
+            </div>
+            <div class="col">
+                <h2 class="foo-title">Thông tin</h2>
+                <a href="#">Tạp chí</a>
+                <a href="#">Cẩm nang</a>
+                <a href="#">Du lịch</a>
+            </div>
+            <div class="col">
+                <h2 class="foo-title">Liên hệ</h2>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Điều khoản chung</a>
+                <a href="#">Chính sách chất lượng</a>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="info">
+            <h2>DU LỊCH DUY ĐẠI</h2>
+            <p>Trải nghiệm của bạn - hạnh phúc của chúng tôi</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
