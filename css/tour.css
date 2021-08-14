@@ -4,7 +4,7 @@
 @import "./footer.css";
 @import "./search.css";
 section {
-  margin: 4rem 2rem;
+  margin: 4rem;
   overflow: hidden;
 }
 .sec-title {
@@ -28,6 +28,15 @@ section {
   height: 0.3rem;
   z-index: 0;
   background-color: rgb(85, 2, 57);
+}
+@media screen and (min-width: 768px) {
+ section {
+    margin: 3rem 2rem;
+  }
+  .sec-title h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 }
 .tour-on .content {
   margin-top: 4rem;

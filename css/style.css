@@ -4,6 +4,7 @@
 @import "./footer.css";
 
 /* -------- */
+
 .items {
   display: flex;
   justify-content: center;
@@ -45,12 +46,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) {
-  .gioithieu-txt {
-    flex-direction: column;
-  }
-}
-
 .gioithieu-title {
   font-size: 28px;
   padding: 1rem 0;
@@ -72,6 +67,19 @@
 .fl3 {
   flex: 3;
 }
+
+@media screen and (max-width: 768px) {
+  .gioithieu-txt {
+    flex-direction: column;
+  }
+  .gioithieu-title {
+  font-size: 20px ;
+}
+.gioithieu-txt p {
+  font-size:15px;
+}
+}
+
 
 /* /-------------/ */
 section {
@@ -100,6 +108,16 @@ section {
   z-index: 0;
   background-color: rgb(85, 2, 57);
 }
+@media screen and (min-width: 768px) {
+ section {
+    margin: 3rem 2rem;
+  }
+  .sec-title h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+
 section .content {
   padding: 4rem 0;
 }
@@ -187,21 +205,17 @@ section .content {
   color: rgb(0, 102, 255);
 }
 .row {
+  margin-left: -2rem;
   display: flex;
   text-align: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-left: -4rem;
+  padding: 0 1rem;
 }
 .cl-4 {
-  width: calc(25% - 4rem);
-  min-width: 325px;
+  width: calc(25% - 2rem);
 }
 .col-item {
   position: relative;
-  margin-top: 1rem;
-  height: 600px;
-  margin-left: 4rem;
+  margin-left: 2rem;
   box-shadow: rgba(0, 0, 0, 0.575) 0px 2px 8px 0px;
 }
 .location .col-item h2 {
@@ -209,33 +223,56 @@ section .content {
   width: 100%;
   top: 10%;
   color: rgb(255, 255, 255);
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
 }
 .cl-3 {
-  width: calc(33.333% - 4rem);
-  min-width: 450px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: calc(33.333% - 2rem);
 }
-.bamien .col-item img {
+.bamien .col-item .box-imgcol {
   height: 50%;
   width: 100%;
+  overflow: hidden;
 }
 .bamien .item-title {
-  padding-top: 2rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
 .bamien .item-title h2 {
   padding: 1rem;
-  font-size: 30px;
+  font-size: 24px;
 }
 .bamien .item-title a {
   color: #000000;
-  padding: 1.5rem 0;
-  font-size: 17px;
+  padding: 1rem 0;
+  font-size: 16px;
   font-weight: 600;
 }
 .bamien .item-title a:hover {
   color: red;
   transition: 0.5s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0.5rem 0 !important;
+  }
+  .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+  .cl-4{
+    height:400px;
+  }
+  .col-item {
+    width: 90%;
+  }
+  .bamien .col-item .box-imgcol {
+    height: 250px;
+  }
 }
