@@ -108,7 +108,7 @@ section {
   z-index: 0;
   background-color: rgb(85, 2, 57);
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
  section {
     margin: 3rem 2rem;
   }
@@ -130,8 +130,11 @@ section .content {
     "h1 h3";
 }
 @media (max-width: 768px) {
+  .tituc .grid{
+     grid-template-rows: 200px 200px;
+     grid-gap: 2rem;
+  }
   .grid {
-    display: grid;
     justify-content: flex-start;
     grid-auto-columns: 90%;
     grid-auto-flow: column;
@@ -212,6 +215,7 @@ section .content {
 }
 .cl-4 {
   width: calc(25% - 2rem);
+  height:600px;
 }
 .col-item {
   position: relative;

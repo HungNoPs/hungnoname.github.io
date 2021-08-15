@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DuyDai - tour miềm trung</title>
+    <title>DuyDai - tin tức</title>
     <!-- linh css -->
-    <link rel="stylesheet" href="../css/tour.css">
+    <link rel="stylesheet" href="../css/tintuc.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -20,7 +20,7 @@
 </head>
 
 <body>
- <header>
+    <header>
         <div class="header-top">
             <div class="header-contact">
                 <i class="fa fa-phone" aria-hidden="true"></i>
@@ -52,7 +52,7 @@
                         <li><a href="./card.html">Vé Vào cổng</a></li>
                     </ul>
                 </li>
-                <li><a href="./tintuc.html" class="nav-link">TIN TỨC</a></li>
+                <li><a href="/html/tintuc.html" class="nav-link">TIN TỨC</a></li>
                 <li><a href="#" class="nav-link">HỖ TRỢ</a></li>
                 <div class="close-nav">
                     <i class="fa fa-times" aria-hidden="true"></i>
@@ -87,137 +87,101 @@
             <button>Search</button>
         </div>
     </div>
-    <div class="search-box">
-        <form class="form">
-            <div class="form-group">
-                <label for="">Tour</label>
-                <input type="text" list="mylist1" placeholder="Chọn tên tour">
-                <datalist id="mylist1">
-                    <option>Tour Miền Bắc</option>
-                    <option>Tour miền name</option>
-                    <option>Tour miềm trung</option>
-                    <option>Seoul</option>
-                </datalist>
-            </div>
-            <div class="form-group">
-                <label for="">Địa điểm</label>
-                <input type="text" list="mylist2" placeholder="Chọn điểm đến">
-                <datalist id="mylist2">
-                    <option>Hà Nội</option>
-                    <option>Hồ Chí Minh</option>
-                    <option>Huế</option>
-                    <option>Phú Quốc</option>
-                </datalist>
-            </div>
-            <div class="form-group">
-                <label for="">Thời gian đi</label>
-                <input type="date" class="date">
-            </div>
-            <div class="form-group">
-                <label for="">Thời gian đến</label>
-                <input type="date" class="date">
-            </div>
-            <a href="#" class="book">Search</a>
-        </form>
+    <div class="items">
+        <div class="box-item">
+            <i class="fa fa-ravelry" aria-hidden="true"></i>
+            <h3 class="box-title">TOUR</h3>
+        </div>
+        <div class="box-item">
+            <i class="fa fa-id-card" aria-hidden="true"></i>
+            <h3 class="box-title">VÉ</h3>
+        </div>
+        <div class="box-item" href="https://facebook.com/">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <h3 class="box-title">KHÁCH SẠN</h3>
+        </div>
+        <div class="box-item">
+            <i class="fa fa-car" aria-hidden="true"></i>
+            <h3 class="box-title">VẬN CHUYỂN</h3>
+        </div>
     </div>
-    <section class="tour-list">
+
+    <section class="tintuc">
         <div class="sec-title">
             <div></div>
-            <h2>TOUR MIỀN TRUNG</h2>
+            <h2>TIN TỨC</h2>
         </div>
         <div class="content">
             <div class="row">
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://vibooking.vn/wp-content/uploads/2019/10/K%E1%BB%B3-Co-Quy-Nh%C6%A1n-Resort-1-870x555.jpg"
+                <div class="col-40">
+                    <div class="img-container">
+                        <img src="https://doanhnhanplus.vn/wp-content/uploads/2018/08/DN-top-9-resort-sang-chanh-bac-nhat-Viet-Nam-Tin-160818-30.jpg"
                             alt="">
-                        <div class="price">Giá: 1.900.000 VND</div>
-                    </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmt.html">
-                            <h4> TOUR KỲ CO - QUY NHƠN</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 2 ngày 1 đêm</p>
                     </div>
 
                 </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://vn-test-11.slatic.net/p/6d84a595491d43b73d0425e50356ec8c.jpg"
+                <div class="col-60 title-container">
+                    <a href="#">
+                        <h3>
+                            TOP 5 KHU NGHỈ DƯỠNG HOT NHẤT
+                            HIỆN NAY
+                        </h3>
+                    </a>
+                    <p> Khi nhắc đến khu nghỉ dưỡng hot thì không thể bỏ qua một trong
+                        các địa điểm: Topas Ecolodge - Sapa, InterContinental Danang Sun
+                        Peninsula Resort, Lak Tented Camp, Avani Quy Nhơn Resort & Sapa,
+                        Chen Sea Resort & Sapa Phú Quốc…..</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-40">
+                    <div class="img-container">
+                        <img src="https://emthomestay.com/wp-content/uploads/2018/07/nhung-khach-san-5-sao-tot-nhat-viet-nam-best-hotel-hinh-anh-2.jpg"
                             alt="">
-                        <span class="hot">Hot</span>
-                        <div class="price">Giá: 1.900.000 VND</div>
-                    </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmt.html">
-                            <h4>TOUR HÒN TẰM - NHA TRANG</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 3 ngày 2 đêm</p>
                     </div>
 
                 </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="http://en.dangcongsan.vn/DATA/3/2019/04/ttxvnlyson_26419-12_19_24_013.jpg" alt="">
-                        <div class="price">Giá: 2.900.000 VND</div>
-                    </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmt.html">
-                            <h4>ĐẢO LÝ SƠN - QUẢN NGÃI</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 3 ngày 2 đêm</p>
+                <div class="col-60 title-container">
+                    <a href="#">
+                        <h3>
+                            BÁO MỸ BÌNH CHỌN 8 KHÁCH SẠN TỐT
+                            NHẤT VIỆT NAM
+                        </h3>
+                    </a>
+                    <p> Mới đây, tạp chí du lịch Cntraveller (Conde Nast Traveler) đã bình
+                        chọn top 8 khu nghỉ dưỡng, khách sạn tốt nhất tại Việt Nam...</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-40">
+                    <div class="img-container">
+                        <img src="https://thanhtra.com.vn/data/images/0/2021/06/28/thaihai/nbddy2.jpg" alt="">
                     </div>
 
                 </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://www.visa-vietnam.org/media/k2/items/cache/6577c6b0fbc4ba9ae61ff6583dc67c84_XL.jpg" alt="">
-                        <span class="hot">Hot</span>
-                        <div class="price">Giá: 1.900.000 VND</div>
-                    </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmt.html">
-                            <h4>TOUR NHA TRANG - ĐÀ LẠT</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 2 ngày 1 đêm</p>
-                    </div>
-
+                <div class="col-60 title-container">
+                    <a href="#">
+                        <h3>
+                            CHÍNH THỨC RA MẮT CLIP" VIỆT NAM:
+                            ĐI ĐỂ YÊU! - VỀ VỚI NINH BÌNH" HƯỞNG
+                            ỨNG NĂM DU LỊCH QUỐC GIA 2021
+                        </h3>
+                    </a>
+                    <p> Ngày 28/6/2021, video clip với chủ đề “Việt Nam: Đi Để Yêu! - Về
+                        với Ninh Bình” đã chính thức ra mắt trên nền tảng YouTube, đưa du
+                        khách đến với hành trình đầy cảm xúc tại mảnh đất Ninh Bình…..</p>
                 </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://www.quangbinhtravel.vn/wp-content/uploads/2020/09/dong-phong-nha-1024x768.jpg" alt="">
-                        <div class="price">Giá: 1.900.000 VND</div>
-                    </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmt.html">
-                            <h4>HUẾ - ĐỘNG PHONG NHA - HANG TỐI</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 2 ngày 1 đêm</p>
-                    </div>
 
-                </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/08/Nui-Ngu-Hanh-Son.png" alt="">
-                        <div class="price">Giá: 2.900.000 VND</div>
-                    </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmt.html">
-                            <h4>HUẾ - NGŨ HÀNH SƠN - HỘI AN</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 3 ngày 2 đêm</p>
-                    </div>
-
-                </div>
             </div>
         </div>
     </section>
+
+
+
+
+
     <footer>
         <div class="footer">
             <div class="col">

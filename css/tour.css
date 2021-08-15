@@ -29,8 +29,8 @@ section {
   z-index: 0;
   background-color: rgb(85, 2, 57);
 }
-@media screen and (min-width: 768px) {
- section {
+@media screen and (max-width: 768px) {
+  section {
     margin: 3rem 2rem;
   }
   .sec-title h2 {
@@ -67,14 +67,14 @@ section {
   width: 100%;
 }
 .tour-on .list-img {
-  margin: 2rem 0;
+  margin-top: 2rem;
   display: flex;
   margin-left: -1rem;
 }
 .tour-on .list-img div {
   margin-left: 1rem;
   width: calc(33.33% - 1rem);
-  height: 100px;
+  height: 120px;
 }
 .box-item {
   background-color: rgb(128, 4, 133);
@@ -133,17 +133,32 @@ section {
   position: relative;
   overflow: hidden;
 }
-.tour-list .tour-item .price {
+.tour-list .tour-item .price,
+.tour-list .tour-item .rank {
   position: absolute;
+  font-size: 17px;
+  font-weight: 500;
+  bottom: 0rem;
+  right: 0rem;
+
+  padding: 6px;
+}
+.tour-list .tour-item .rank {
+  display:flex;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+.tour-list .tour-item .rank i{
+  font-size: 2rem;
+  margin-left: .5rem;
+  color: yellow;
+}
+.tour-list .tour-item .price {
+  background-color: rgba(38, 89, 255, 0.801);
   color: #ffff;
-  font-size: 18px;
-  font-weight: 600;
-  bottom: 1rem;
-  right: 1rem;
 }
 .hot {
   position: absolute;
-  padding: 0.5rem;
+  padding: 0.6rem;
   color: #ffff;
   background-color: red;
   top: 3rem;
@@ -155,7 +170,7 @@ section {
   height: 100%;
   width: 60%;
   top: 0;
-  left: 100%;
+  left: 99%;
   background-color: rgb(255, 0, 0);
 }
 .hot::after {
@@ -165,7 +180,7 @@ section {
   clip-path: polygon(100% 100%, 0 50%, 0 100%);
 }
 .tour-list .tour-box-info {
-  padding: 2rem 0 2rem 1rem;
+  padding: 2rem 0;
 }
 .tour-box-info a h4 {
   color: #000;
@@ -180,7 +195,7 @@ section {
   transition: 0.5s;
 }
 .tour-box-info p {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   font-weight: 500;
 }
 @media screen and (max-width: 768px) {
@@ -218,6 +233,5 @@ section {
   }
   .tour-list .col-3 {
     width: 90%;
-    padding: 0.5rem;
   }
 }

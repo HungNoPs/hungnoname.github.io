@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DuyDai - tour miềm bắc</title>
+    <title>DuyDai</title>
     <!-- linh css -->
-    <link rel="stylesheet" href="../css/tour.css">
+    <link rel="stylesheet" href="../css/card.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!-- Font google -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -20,11 +20,11 @@
 </head>
 
 <body>
-<header>
+    <header>
         <div class="header-top">
             <div class="header-contact">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <p>019988575</p>
+                <p >019988575</p>
             </div>
             <div class="header-contact">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -47,7 +47,7 @@
                 </li>
                 <li class="subnav"><a href="#" class="nav-link">DỊCH VỤ</a>
                     <ul class="submenu">
-                        <li><a href="./list_hotel.html">Khách Sạn</a></li>
+                        <li><a href="./html/list_hotel.html">Khách Sạn</a></li>
                         <li><a href="./list_vanchuyen.html">vận chuyển</a></li>
                         <li><a href="./card.html">Vé Vào cổng</a></li>
                     </ul>
@@ -90,23 +90,22 @@
     <div class="search-box">
         <form class="form">
             <div class="form-group">
-                <label for="">Tour</label>
+                <label for="">Địa Điểm</label>
                 <input type="text" list="mylist1" placeholder="Chọn tên tour">
                 <datalist id="mylist1">
                     <option>Tour Miền Bắc</option>
-                    <option>Tour miền name</option>
+                    <option>Tour miền nam</option>
                     <option>Tour miềm trung</option>
-                    <option>Seoul</option>
                 </datalist>
             </div>
             <div class="form-group">
-                <label for="">Địa điểm</label>
-                <input type="text" list="mylist2" placeholder="Chọn điểm đến">
+                <label for="">Giá</label>
+                <input type="text" list="mylist2" placeholder="Nhập giá">
                 <datalist id="mylist2">
-                    <option>Hà Nội</option>
-                    <option>Hồ Chí Minh</option>
-                    <option>Huế</option>
-                    <option>Phú Quốc</option>
+                    <option>0-50.000</option>
+                    <option>50.000-100.000</option>
+                    <option>100.000-200.000</option>
+                    <option>200.000-...</option>
                 </datalist>
             </div>
             <div class="form-group">
@@ -120,104 +119,61 @@
             <a href="#" class="book">Search</a>
         </form>
     </div>
-    <section class="tour-list">
+    <section class="card">
         <div class="sec-title">
             <div></div>
-            <h2>TOUR MIỀN NAM</h2>
+            <h2>VÉ VÀO CỔNG</h2>
         </div>
         <div class="content">
+            <div class="card-info">
+                <h5>Liên hệ đặt vé:</h5>
+                <p>
+                    SĐT: 0914 237 464 <br>
+                    Email: duydaihuy@gmail.com
+                </p>
+            </div>
             <div class="row">
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://monremedia.vn/uploads/news/nhung-bai-bien-dep-nhat-viet-nam-2-1.jpg"
-                            alt="">
-                        <div class="price">Giá: 1.900.000 VND</div>
+                <div class="col">
+                    <div class="box-img"><img src="https://motogo.vn/wp-content/uploads/2020/03/bien-ky-co-quy-nhon.jpg" alt=""></div>
+                    <div class="card-content-title">
+                        <h2>Kỳ Co</h2>
+                        <p>Vé vào cổng: 60k/1 người</p>
+                        <p>Trung chuyển: 40K/1 người</p>
                     </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmn.html">
-                            <h4>TOUR SÓC TRĂNG - CÔN ĐẢO</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 2 ngày 1 đêm</p>
-                    </div>
-
                 </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://pqr.vn/wp-content/uploads/2019/04/nganh-du-lich-dao-ngoc-phu-quoc-se-toc-khi-len-doi-thanh-pho-1.jpg"
-                            alt="">
-                        <span class="hot">Hot</span>
-                        <div class="price">Giá: 1.900.000 VND</div>
+                <div class="col">
+                    <div class="box-img"><img src="https://motogo.vn/wp-content/uploads/2020/03/bien-ky-co-quy-nhon.jpg" alt=""></div>
+                    <div class="card-content-title">
+                        <h2>Kỳ Co</h2>
+                        <p>Vé vào cổng: 60k/1 người</p>
+                        <p>Trung chuyển: 40K/1 người</p>
                     </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmn.html">
-                            <h4>TOUR ĐẢO NGỌC - PHÚ QUỐC</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 3 ngày 1 đêm</p>
-                    </div>
-
                 </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://dulichkhampha24.com/wp-content/uploads/2020/04/kinh-nghiem-du-lich-ho-tram-2.jpg" alt="">
-                        <div class="price">Giá: 1.900.000 VND</div>
+                <div class="col">
+                    <div class="box-img"><img src="https://motogo.vn/wp-content/uploads/2020/03/bien-ky-co-quy-nhon.jpg" alt=""></div>
+                    <div class="card-content-title">
+                        <h2>Kỳ Co</h2>
+                        <p>Vé vào cổng: 60k/1 người</p>
+                        <p>Trung chuyển: 40K/1 người</p>
                     </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmn.html">
-                            <h4>DU LỊCH LONG HẢI - HỒ TRÀM</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 3 ngày 1 đêm</p>
-                    </div>
-
                 </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://tntourist.vn/wp-content/uploads/2017/05/du-lich-phu-quoc-tn-tourist-720x480.jpg" alt="">
-                        <span class="hot">Hot</span>
-                        <div class="price">Giá: 1.900.000 VND</div>
+                <div class="col">
+                    <div class="box-img"><img src="https://motogo.vn/wp-content/uploads/2020/03/bien-ky-co-quy-nhon.jpg" alt=""></div>
+                    <div class="card-content-title">
+                        <h2>Kỳ Co</h2>
+                        <p>Vé vào cổng: 60k/1 người</p>
+                        <p>Trung chuyển: 40K/1 người</p>
                     </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmn.html">
-                            <h4>PHÚ QUỐC - TOUR CÂU MỰC ĐÊM</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 3 ngày 1 đêm</p>
-                    </div>
-
                 </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://www.vietnambooking.com/wp-content/uploads/2017/01/du-lich-can-tho-14-10-2017-1.jpg" alt="">
-                        <div class="price">Giá: 1.900.000 VND</div>
-                    </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmn.html">
-                            <h4>DU LỊCH TIỀN GIANG - CẦN THƠ</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 3 ngày 1 đêm</p>
-                    </div>
-
-                </div>
-                <div class="col-3 tour-item">
-                    <div class="tour-box-img">
-                        <img src="https://scontent.smarttourism.vn/resources/portal/Images/LSN/ducnm.lsn/mua_dong_tren_dinh_mau_son_637223892599161105.jpg" alt="">
-                        <div class="price">Giá: 1.900.000 VND</div>
-                    </div>
-                    <div class="tour-box-info">
-                        <a href="./tourmn.html">
-                            <h4>TOUR VÒNG CUNG - ĐÔNG BẮC</h4>
-                        </a>
-                        <p>Xuất phát: Huế</p>
-                        <p>Thời gian: 3 ngày 1 đêm</p>
-                    </div>
-
-                </div>
+                    
+                        <a href="#" class="btn">Xem Thêm</a>
+                    
             </div>
         </div>
     </section>
+
+
+
     <footer>
         <div class="footer">
             <div class="col">
@@ -245,12 +201,8 @@
             <p>Trải nghiệm của bạn - hạnh phúc của chúng tôi</p>
         </div>
     </footer>
-
-
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="../index.js"></script>
-
+    <script src="/index.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,118 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./banner.css";
+@import "./footer.css";
+section {
+  margin: 4rem;
+  overflow: hidden;
+}
+.sec-title {
+  position: relative;
+}
+.sec-title h2 {
+  position: relative;
+  line-height: 1.5;
+  padding: 0 2rem 0;
+  display: inline-block;
+  margin-left: 10rem;
+  font-size: 4rem;
+  z-index: 99;
+  background-color: #ffff;
+}
+.sec-title div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.3rem;
+  z-index: 0;
+  background-color: rgb(85, 2, 57);
+}
+@media screen and (max-width: 768px) {
+  section {
+    margin: 3rem 2rem;
+  }
+  .sec-title h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+.items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box-item {
+  width: 20%;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(97, 210, 255, 0.753);
+  height: 200px;
+  margin: 2rem 3rem;
+  border-radius: 50px;
+}
+.box-item:hover {
+  transition: 0.5s ease-in-out;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.box-item i {
+  font-size: 8rem;
+}
+.box-item h3 {
+  text-align: center;
+  width: 100%;
+  padding: 2rem 0;
+  border-top: 2px solid #000;
+}
+
+.tintuc .row {
+  
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+.tintuc .col-40{
+    width: 40%;
+}
+.tintuc .col-60{
+    width: 60%;
+}
+.img-container{
+    height: 100%;
+    width: 100%;
+}
+.tintuc .title-container h3 {
+  color: #000;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+}
+.tintuc .title-container p {
+  padding: 2rem;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .tintuc .row {
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 1rem;
+  }
+  .tintuc .col-40,
+  .tintuc .col-60 {
+    width: 100%;
+  }
+  .tintuc .title-container h3 {
+    font-size: 2rem;
+  }
+  .tintuc .title-container p {
+    font-size: 1.5rem;
+  }
+}

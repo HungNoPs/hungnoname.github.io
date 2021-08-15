@@ -1,0 +1,136 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./banner.css";
+@import "./search.css";
+.card {
+    padding:2rem;
+  margin: 2rem;
+  overflow: hidden;
+}
+.sec-title {
+  position: relative;
+}
+.sec-title h2 {
+  position: relative;
+  line-height: 1.5;
+  padding: 0 2rem 0;
+  display: inline-block;
+  margin-left: 10rem;
+  font-size: 4rem;
+  z-index: 99;
+  background-color: #ffff;
+}
+.sec-title div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 0.3rem;
+  z-index: 0;
+  background-color: rgb(85, 2, 57);
+}
+@media screen and (max-width: 768px) {
+  .card {
+    margin: 3rem 0rem;
+  }
+  .sec-title h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+.card .content {
+    margin-top: 2rem;
+    border: 2px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 5px 15px;
+    padding: 2rem
+}
+.card .card-info{
+    background-color: rgba(14, 227, 255, 0.404);
+    padding: 3rem;
+}
+.card .card-info h5{
+    font-size: 2rem;
+padding-bottom: 1rem;
+color:rgb(1, 3, 99)
+}
+.card .card-info p {
+    padding-left: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.card .row{
+    margin-top:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4rem;
+    row-gap: 2rem;
+}
+.card .col {
+    position: relative;
+    width: 100%;
+    width: calc(50% - 4rem);
+    margin-left:4rem;
+    text-align: center;
+}
+.card .col .box-img{
+    overflow: hidden;
+    width: 100%;
+}
+.card .col img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.card .card-content-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.card .card-content-title h2 {
+    color: #fff;padding: 1rem;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+}
+.card .card-content-title p {
+    color: rgb(0, 0, 0);padding: .5rem;
+    background-color:rgba(255, 255, 255, 0.5);
+}
+
+.card .btn {
+    left: calc(50% - 2rem);
+    transform: translateX(-50%);
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    background-color:rgb(145, 0, 145);
+    margin-left: 4rem;
+}
+.card .btn::before{
+    content: '';
+    transform:skew(-45deg);
+    position: absolute;
+    top: -35px;
+    left:-75px;
+    height:100px;
+    width: 50px;
+    background-color:rgb(255, 255, 255);
+    opacity: 0.2;
+    transition:.5s ease-in-out;
+}
+.card .btn:hover::before{
+    left: 180px;
+    opacity: 0.4;
+}
+@media screen and (max-width: 768px) {
+    .card .row {
+        align-items: center;
+        justify-content: center;
+    }
+  .card .col {
+      width: 100%;
+  }
+}
