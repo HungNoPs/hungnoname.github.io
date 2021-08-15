@@ -140,7 +140,6 @@ section {
   font-weight: 500;
   bottom: 0rem;
   right: 0rem;
-
   padding: 6px;
 }
 .tour-list .tour-item .rank {
@@ -162,6 +161,7 @@ section {
   color: #ffff;
   background-color: red;
   top: 3rem;
+  left: 0;
 }
 .hot::before,
 .hot::after {
